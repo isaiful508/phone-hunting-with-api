@@ -30,13 +30,23 @@
             <button onclick="handleSearch2()" class="btn btn-active btn-primary">Search</button>
 
         </section>
+        
+ 
+
         <section>
+            <!-- spinner or loader -->
+            <div id="load-spinner" class="text-center hidden my-40">
+                <span class="loading loading-spinner text-primary loading-lg"></span>
+            </div>
+
+
             <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-5 " >
                 <!-- dynamically update by js -->
               
             </div>
-            <div id="show-all-container" class="hidden">
-                <button class="btn btn-accent">Show All</button>
+            <!-- show all button -->
+            <div id="show-all-container" class="hidden text-center">
+                <button onclick="handleShowAll()" class="btn btn-accent">Show All</button>
             </div>
         </section>
     </main>
