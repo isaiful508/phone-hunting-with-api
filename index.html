@@ -20,7 +20,8 @@
         <!-- search here -->
         <section class="m-4 p-4 bg-gray-100">
 
-            <input id="search-field" type="text" placeholder="Search...." class="input input-bordered w-full max-w-xs" />
+            <input id="search-field" type="text" placeholder="Search...."
+                class="input input-bordered w-full max-w-xs" />
 
             <button onclick="handleSearch()" class="btn btn-accent bg-gray-100 border-none">Search</button>
 
@@ -30,8 +31,8 @@
             <button onclick="handleSearch2()" class="btn btn-active btn-primary">Search</button>
 
         </section>
-        
- 
+
+
 
         <section>
             <!-- spinner or loader -->
@@ -40,15 +41,35 @@
             </div>
 
 
-            <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-5 " >
+            <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-5 ">
                 <!-- dynamically update by js -->
-              
+
             </div>
             <!-- show all button -->
             <div id="show-all-container" class="hidden text-center">
                 <button onclick="handleShowAll()" class="btn btn-accent">Show All</button>
             </div>
         </section>
+       
+
+        <!-- show deatils in modal -->
+        <!-- open the modal using id .showmodal method -->
+        <!-- Open the modal using ID.showModal() method -->
+       
+        <dialog id="show_details_modal" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box">
+                <h3 id="show-details-phone-name" class="font-bold text-3xl"> </h3>
+                <div id="show-detail-container">
+
+                </div>
+                <div class="modal-action">
+                    <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Close</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
     </main>
     <footer>
 
